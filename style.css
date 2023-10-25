@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#header{
+    background-color: rgb(88, 58, 197);    
+      
+}
+
+#menu{
+    justify-content: center;
+    text-align: center;
+}
+
+#main{
+    background-color: silver;
+    display: flex;
+    flex-grow: 1;
+}
+.tile{
+    background-color: white;
+    height: 130px;
+    width: 130px;
+    border: solid black 1px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
