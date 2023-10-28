@@ -1,46 +1,60 @@
 body{
+    border: red solid 1px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
-
-
 #header{
-    background-color: rgb(88, 58, 197);    
-      
+    background-color: rgb(88, 58, 197);      
 }
 
 #menu{
     justify-content: center;
     text-align: center;
-}
-
-#main{
-    background-color: rgb(236, 225, 225);
     display: flex;
-    align-items: center;
+}
+#controls{
+    display: flex;
     justify-content: center;
-    flex-grow: 1;
-    min-height: 80vh;
-    
+    gap: 10px;
+    align-items: center;
+
+}
+#main{
+    display: flex;
+    border: solid;
+    justify-content: center;
 }
 #canvas{
-    background-color: beige;
-    display: inline-grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
     
+    margin: 6vh;
+    box-sizing: content-box;
+    display: grid;
+    height: 80vh;
+    width: 80vh;
+    border: 1px rgba(0, 0, 0, 0.404) solid;
     
-     
+        
 }
+#colorbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .tile{
-    display: block;
+    
     background-color: white;
-    border: solid black 1px;
+    border: solid rgb(236, 231, 231) 1px;
 }
 .tile:hover {
-    color: red;
+    
     background-color: black;
   }
+
+
+
 #footer{
     background-color: black;
     color: white;
